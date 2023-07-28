@@ -306,49 +306,15 @@
     margin: 70px;
 }
 
-/* .info .container .right .moreb{
-    background-image: linear-gradient(to right,rgb(255, 106, 0),red);
-    padding:20px;
-    border:1px solid orangered;
-    display: flex;
-    width: 150px;
-    margin-left: 100px;
-} */
 .info .container .right .moreb a {
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
-
-.album {
-    margin: 50px 0px;
-    background-color: rgb(235, 235, 235);
-    padding-bottom: 40px;
+.container .slide-track figure{
+    padding:20px;
+    margin: 20px;
 }
-
-.album .img_box {
-    display: flex;
-    padding: 2rem 5rem;
-    gap: 1rem;
-    margin: 30px 0px;
-}
-
-.album .img_box figure {
-    width: calc(25% - 1rem);
-}
-
-.album .img_box figure img {
-    width: 100%;
-    height: 100%;
-}
-
-.album .moreb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
 .recent-event {
     width: 100%;
     position: relative;
@@ -390,11 +356,13 @@
     gap: 1rem;
     margin-top: .5rem;
 }
+
 .recent-event .left .headimg .content ul li i {
-   margin-right: 1rem;
+    margin-right: 1rem;
 }
-.recent-event .left .headimg .content ul + p{
-   margin: 1rem 0;
+
+.recent-event .left .headimg .content ul+p {
+    margin: 1rem 0;
 }
 
 /* .recent-event .left .headimg .content ul i{
@@ -548,7 +516,7 @@
 }
 
 .videos .img_box ul li {
-    padding: 10px;
+    padding: 15px;
 }
 
 .videos .img_box ul li p {
@@ -556,8 +524,9 @@
     font-weight: bold;
 }
 
-.videos .img_box ul li img {
-    width: 100%;
+.videos .img_box ul li iframe {
+    width: 300px;
+    height: 200px;
 }
 
 .videos .moreb {
@@ -571,11 +540,15 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(213, 126, 126, 0.329), rgba(220, 205, 205, 0.283)), url('../Assets/pinkbg.jpg');
+    background: linear-gradient(rgba(49, 48, 48, 0.329), rgba(85, 84, 84, 0.283)), url('../Assets/event2.webp');
     content: '';
     z-index: -1;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.departments .left-text {
+    color: white;
 }
 
 .departments .parent {
@@ -634,6 +607,7 @@
     align-items: center;
 
 }
+
 .departments .sidelist .sideUl ul {
     list-style-type: none;
     display: flex;
@@ -696,15 +670,16 @@
 }
 
 .news .img_box {
-    margin: 40px 0px;
+    margin: 40px 15px;
 }
 
 .news .img_box ul li {
-    padding: 10px;
+    padding: 15px;
 }
 
-.news .img_box ul li img {
-    width: 100%;
+.news .img_box ul li iframe {
+    width: 300px;
+    height: 200px;
 }
 
 .news .img_box ul li p {
@@ -735,11 +710,12 @@
 }
 
 .speech .img_box ul li {
-    padding: 10px;
+    padding: 15px;
 }
 
-.speech .img_box ul li img {
-    width: 100%;
+.speech .img_box ul li iframe {
+    width: 300px;
+    height: 200px;
 }
 
 .speech .img_box ul li p {
@@ -771,11 +747,12 @@
 }
 
 .debate .img_box ul li {
-    padding: 10px;
+    padding: 15px;
 }
 
-.debate .img_box ul li img {
-    width: 100%;
+.debate .img_box ul li iframe {
+    width: 300px;
+    height: 200px;
 }
 
 .debate .img_box ul li p {
@@ -789,6 +766,7 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .community::before {
     position: absolute;
     width: 100%;
@@ -799,52 +777,63 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.community{
-margin:50px 0px;
+
+.community {
+    margin: 50px 0px;
 }
-.community .left{
+
+.community .left {
     display: flex;
     flex-direction: column;
     margin: 50px;
 }
-.community .left .column{
+
+.community .left .column {
     display: flex;
     border: 5px solid rgb(175, 171, 171);
     margin-top: 30px;
-     
+
 }
-.community .left .column ul{
-    margin:40px;
+
+.community .left .column ul {
+    margin: 40px;
 }
-.community .left .column ul li{
-    padding:20px;
+
+.community .left .column ul li {
+    padding: 20px;
     font-size: 20px;
     font-weight: 800;
-    text-wrap:nowrap;
+    text-wrap: nowrap;
     transition: all .5s ease-in-out;
 }
-.community .left .column ul li:hover{
-    color:red;
+
+.community .left .column ul li:hover {
+    color: red;
 }
-.community .left .column ul li i{
-    padding:10px;
+
+.community .left .column ul li i {
+    padding: 10px;
     background-color: rgb(152, 152, 224);
     font-size: 30px;
     border-radius: 50%;
     margin-right: 20px;
 }
-.community .right{
+
+.community .right {
     margin: 50px;
 }
+
 .community .right .headimg {
     position: relative;
     overflow: hidden;
 }
-.community .right .headimg .content  {
-   margin-right: 0.5rem;
+
+.community .right .headimg .content {
+    margin-right: 0.5rem;
 }
-.community .right .headimg .content p{
-   margin: 1rem 0;
+
+.community .right .headimg .content p {
+    margin: 1rem 0;
 }
 
 .community .right .headimg .content {
@@ -856,7 +845,7 @@ margin:50px 0px;
     overflow: hidden;
     transform: translateY(5px);
     transition: all .5s ease-out;
-    color:white;
+    color: white;
 
 }
 
@@ -866,10 +855,12 @@ margin:50px 0px;
     cursor: pointer;
 
 }
-.community .right figure{
-    padding:10px;
+
+.community .right figure {
+    padding: 10px;
     margin-top: 30px;
 }
+
 /* .emergency::before {
     position: absolute;
     width: 100%;
@@ -880,96 +871,113 @@ margin:50px 0px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 } */
-.emergency{
+.emergency {
     /* display: flex; */
     /* margin: 50px 100px; */
-    background-image: linear-gradient(rgb(205, 128, 175),white);
+    background-image: linear-gradient(rgb(205, 128, 175), white);
     width: 100%;
 }
-.emergency .box1{
+
+.emergency .box1 {
     margin: 6% 40px;
     background-color: #cb4c11;
-    padding:15px;
+    padding: 15px;
     border-radius: 5px;
     width: 50%;
 }
-.emergency .box1 h1{
+
+.emergency .box1 h1 {
     padding: 5px;
 }
-.emergency .box1 p{
+
+.emergency .box1 p {
     font-size: 20px;
-    text-wrap:wrap;
+    text-wrap: wrap;
 }
-.emergency .box1 form{
+
+.emergency .box1 form {
     margin: 10px;
 }
-.emergency .box1 form input{
+
+.emergency .box1 form input {
     width: 200px;
     height: 30px;
     border-radius: 5px;
     margin: 20px 10px;
-    font-size:20px;
-    padding:10px;
-    border:1px solid white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
 
 }
-.emergency .box1  ul{
+
+.emergency .box1 ul {
     display: flex;
     padding: 10px;
 }
-.emergency .box1  ul button{
+
+.emergency .box1 ul button {
     margin: 50px;
     padding: 15px;
     background-color: rgb(11, 5, 88);
     border-radius: 20px;
-    color:white;
-    width:150px;
+    color: white;
+    width: 150px;
     font-size: 20px;
-    border:1px solid palevioletred;
+    border: 1px solid palevioletred;
 }
-.emergency .upper{
+
+.emergency .upper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 50px 10px;
 }
-.emergency .services{
+
+.emergency .services {
     display: flex;
     flex-direction: row;
 }
-.emergency .boxes{
+
+.emergency .boxes {
     display: flex;
-   padding:15px;
-   border: 1px solid rgb(194, 191, 191);
-   margin:10px 10px;
-   text-align: center;
-   background-color: white;
-   border-radius: 2px;
-   box-shadow: 5px 5px 15px gray;
+    padding: 15px;
+    border: 1px solid rgb(194, 191, 191);
+    margin: 10px 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 5px 5px 15px gray;
 }
-.emergency .all_center{
+
+.emergency .all_center {
     display: flex;
     justify-content: space-around;
 }
-.emergency .boxes ul{
+
+.emergency .boxes ul {
     display: flex;
     flex-direction: column;
 }
-.emergency .right{
+
+.emergency .right {
     margin: 50px 20px;
 }
-.emergency .boxes ul i{
+
+.emergency .boxes ul i {
     font-size: 30px;
     color: rgb(189, 75, 75);
 }
-.emergency .boxes ul h1{
-    color:rgb(61, 30, 172)
+
+.emergency .boxes ul h1 {
+    color: rgb(61, 30, 172)
 }
+
 .bottom {
-    margin-top:20px ;
+    margin-top: 20px;
     background-color: black;
-    color:white;
+    color: white;
 }
+
 .bottom .columns {
     display: flex;
     float: left;
@@ -996,7 +1004,7 @@ margin:50px 0px;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 20px snow;
-    
+
 }
 
 .bottom .columns .cardli {
