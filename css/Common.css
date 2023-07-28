@@ -1,0 +1,70 @@
+* {
+    font-family: "PT Sans";
+}
+
+.heading {
+    color: rgb(255, 111, 0);
+    font-size: 40px;
+    border-bottom: 2px solid rgb(255, 94, 0);
+    padding: 15px;
+    display: inline;
+    text-align: center;
+    margin: auto;
+}
+
+.more_btn {
+    background-image: linear-gradient(to right, rgb(255, 106, 0), red);
+    color: white;
+    padding: 20px;
+    border: 1px solid orangered;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgb(107, 105, 102);
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.more_btn:hover {
+    z-index: 2;
+    transform: scale(1.1);
+}
+
+.all_center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+.img_box figure {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 2px;
+
+}
+
+.img_box figure img {
+
+    transition: all .7s ease-out;
+
+}
+
+.img_box figure img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.space-between {
+    justify-content: space-between;
+}
